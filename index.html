@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <title>WebOS - Web Desktop</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/grid-12.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+
+<!--    <link rel="stylesheet" href="css/mobile.css" />-->
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="stylesheet" href="third-party/uniform/css/uniform.default.css" />
+
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.event.drag-2.2.js"></script>
+    <script type="text/javascript" src="js/jquery.event.drop-2.2.js"></script>
+    <script type="text/javascript" src="js/jquery.notice.js"></script>
+    <script type="text/javascript" src="third-party/uniform/jquery.uniform.min.js"></script>
+    
+
+    <script type="text/javascript" src="js/desktop/DesktopUtil.js"></script>
+    <script type="text/javascript" src="js/desktop/UXIcon.js"></script>
+    <script type="text/javascript" src="js/desktop/UXLoader.js"></script>
+    <script type="text/javascript" src="js/desktop/UXNotify.js"></script>
+    <script type="text/javascript" src="js/desktop/UXDialog.js"></script>
+    <script type="text/javascript" src="js/desktop/UXTaskbarIcon.js"></script>
+    <script type="text/javascript" src="js/desktop/UXTaskbutton.js"></script>
+    <script type="text/javascript" src="js/desktop/UXWindow.js"></script>
+    <script type="text/javascript" src="js/General.js"></script>
+    <script type="text/javascript" src="js/App.js"></script>
+
+    <body>
+        <div id="ux-desktop-wrapper">
+            
+            <div id="wallpaper">
+                <img src="images/wallpapers/blue.jpg" />
+                
+                <!-- below is an example to have live-wallpapers (flash-based, not mobile compatible) -->
+<!--                <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="100%" height="100%" id="wallpaper-flash" align="middle">
+                    <param name="allowScriptAccess" value="always" />
+                    <param name="allowFullScreen" value="false" />
+                    <param name="movie" value="images/wallpapers/blue-line.swf" />
+                    <param name="quality" value="high" />
+                    <param name="scale" value="exactfit" />
+                    <param name="bgcolor" value="#ffffff" />
+                    <param name="wmode" value="opaque" />
+                    <embed wmode="opaque" src="images/wallpapers/blue-line.swf" quality="high" scale="exactfit" bgcolor="#ffffff" width="100%" height="100%" name="wallpaper-flash" align="middle" allowScriptAccess="always" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+                </object>-->
+            </div>
+            
+            <div class="ux-icon-holder">
+                    <!-- placed here-->
+            </div>
+            
+            <div class="ux-body">
+                    <!-- placed here-->
+            </div>
+            
+            <div class="ux-taskbar">
+                <div class="ux-taskbar-menu">
+                    <div class="ux-taskbar-menu-popup">
+                        <div class="ux-taskbar-title">
+                            <p>Riten Vagadiya</p>
+                        </div>
+                        <div class="ux-taskbar-icons">
+                            <a class="ux-taskbar-scroll-down"></a>
+                            <a class="ux-taskbar-scroll-up"></a>
+                            <div class="ux-taskbar-icon-holder-wrapper">
+                                <div class="ux-taskbar-icon-holder">
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ux-taskbar-config-holder">
+                            <div class="ux-taskbar-icon">
+                                <div class="ux-taskbar-icon-title icon-settings-16 ux-icon-class-small-replace">Settings</div>
+                            </div>
+                            <div class="ux-taskbar-icon">
+                                <div class="ux-taskbar-icon-title icon-close-16 ux-icon-class-small-replace close-all-windows">Close All</div>
+                            </div>
+                            <div class="ux-taskbar-icon">
+                                <div class="ux-taskbar-icon-title icon-logout-16 ux-icon-class-small-replace">Log Out</div>
+                            </div>
+                            <div class="ux-separator"></div>
+                            <div class="ux-taskbar-icon">
+                                <div class="ux-taskbar-icon-title icon-close-16 ux-icon-class-small-replace  close-active-window">Close Active</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="ux-taskbar-menu-button"></div>
+                </div>
+                
+                <div class="ux-taskbar-quick-launch">
+                    <a title="Show Desktop" class="ux-show-desktop"></a>
+                </div>
+                <div class="ux-taskbar-buttons">
+                    <!-- placed here-->
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="ux-templates">
+            
+            <div id="ux-taskbar-icon-template" class="ux-template">
+<!--                    below is the template for creating icons-->
+                <div class="ux-taskbar-icon" id="{ID}">
+                    <div class="ux-taskbar-icon-title ux-icon-class-small-replace">{title}</div>
+                </div>
+<!--                    above is the template for creating icons-->
+            </div>
+            
+            <div id="ux-icon-template" class="ux-template">
+<!--                    below is the template for creating icons-->
+                <div class="ux-icon" id="{ID}">
+                    <div class="ux-icon-graphic ux-icon-class-replace"></div>
+                    <p class="ux-icon-title">{title}</p>
+                </div>
+<!--                    above is the template for creating icons-->
+            </div>
+            
+            <div id="ux-window-template" class="ux-template">
+<!--                    below is the template for creating windows-->
+                <div class="ux-window" style="display:none;" id="{ID}">
+                    
+                    <div class="ux-window-header">
+                        <div class="ux-window-header-title ux-icon-class-small-replace">
+                            <p>{title}</p>
+                        </div>
+                        <div class="ux-window-header-controls">
+                            <a class="ux-controls-min"></a>
+                            <a class="ux-controls-max"></a>
+                            <a class="ux-controls-close"></a>
+                        </div>
+                    </div>
+                    <div class="ux-window-content">
+
+                    </div>
+                    <div class="ux-window-status"><p>{status}</p></div>
+                    <div class="ux-window-resizer"></div>
+                </div>
+<!--                    above is the template for creating windows--> 
+            </div>
+            
+            <div id="ux-taskbutton-template" class="ux-template">
+<!--                    below is the template for creating windows-->
+                <div class="ux-taskbar-button" id="{ID}">
+                    <div class="ux-taskbar-button-title ux-icon-class-small-replace">{title}</div>
+                </div>
+<!--                    above is the template for creating windows-->
+            </div>
+        </div>
+    </body>
+    
+</html>

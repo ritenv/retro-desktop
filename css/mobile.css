@@ -1,0 +1,11 @@
+.ux-window {
+    left: 0;
+    top: 0;
+}
+.ux-taskbar-button {
+    width: 34px;
+}
+.ux-taskbar-button-title {
+    background-position: 0px 2px;
+    text-indent: -100px;
+}

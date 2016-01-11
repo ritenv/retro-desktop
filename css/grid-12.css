@@ -1,0 +1,67 @@
+
+/* 12 Grid */
+.typo-grid-1, .typo-grid-2, .typo-grid-3, .typo-grid-4, .typo-grid-5, .typo-grid-6, .typo-grid-7, .typo-grid-8, .typo-grid-9, .typo-grid-10, .typo-grid-11, .typo-grid-12 {display: inline;float: left;position: relative;margin-left: 10px;margin-right: 10px;}
+.typo-container .typo-grid-1 {width: 60px;}
+.typo-container .typo-grid-2 {width: 140px;}
+.typo-container .typo-grid-3 {width: 220px;}
+.typo-container .typo-grid-4 {width: 300px;}
+.typo-container .typo-grid-5 {width: 380px;}
+.typo-container .typo-grid-6 {width: 460px;}
+.typo-container .typo-grid-7 {width: 540px;}
+.typo-container .typo-grid-8 {width: 620px;}
+.typo-container .typo-grid-9 {width: 700px;}
+.typo-container .typo-grid-10 {width: 780px;}
+.typo-container .typo-grid-11 {width: 860px;}
+.typo-container .typo-grid-12 {width: 940px;}
+
+/* Grid Push */
+.typo-container .typo-push-1 {left: 80px;}
+.typo-container .typo-push-2 {left: 160px;}
+.typo-container .typo-push-3 {left: 240px;}
+.typo-container .typo-push-4 {left: 320px;}
+.typo-container .typo-push-5 {left: 400px;}
+.typo-container .typo-push-6 {left: 480px;}
+.typo-container .typo-push-7 {left: 560px;}
+.typo-container .typo-push-8 {left: 640px;}
+.typo-container .typo-push-9 {left: 720px;}
+.typo-container .typo-push-10 {left: 800px;}
+.typo-container .typo-push-11 {left: 880px;}
+
+/* Grid Pull */
+.typo-container .typo-pull-1 {left: -80px;}
+.typo-container .typo-pull-2 {left: -160px;}
+.typo-container .typo-pull-3 {left: -240px;}
+.typo-container .typo-pull-4 {left: -320px;}
+.typo-container .typo-pull-5 {left: -400px;}
+.typo-container .typo-pull-6 {left: -480px;}
+.typo-container .typo-pull-7 {left: -560px;}
+.typo-container .typo-pull-8 {left: -640px;}
+.typo-container .typo-pull-9 {left: -720px;}
+.typo-container .typo-pull-10 {left: -800px;}
+.typo-container .typo-pull-11 {left: -880px;}
+
+/* Prefix for left nudging */
+.typo-container .typo-prefix-1 {padding-left:80px;}
+.typo-container .typo-prefix-2 {padding-left:160px;}
+.typo-container .typo-prefix-3 {padding-left:240px;}
+.typo-container .typo-prefix-4 {padding-left:320px;}
+.typo-container .typo-prefix-5 {padding-left:400px;}
+.typo-container .typo-prefix-6 {padding-left:480px;}
+.typo-container .typo-prefix-7 {padding-left:560px;}
+.typo-container .typo-prefix-8 {padding-left:640px;}
+.typo-container .typo-prefix-9 {padding-left:720px;}
+.typo-container .typo-prefix-10 {padding-left:800px;}
+.typo-container .typo-prefix-11 {padding-left:880px;}
+
+/* Extras */
+.left-1, .right-1 {width: 30px;}
+.left-2, .right-2 {width: 110px;}
+.left-3, .right-3 {width: 190px;}
+.left-4, .right-4 {width: 270px;}
+.left-5, .right-5 {width: 350px;}
+.left-6, .right-6 {width: 430px;}
+.left-7, .right-7 {width: 510px;}
+.left-8, .right-8 {width: 590px;}
+.left-9, .right-9 {width: 670px;}
+.left-10, .right-10 {width: 750px;}
+.left-11, .right-11 {width: 830px;}

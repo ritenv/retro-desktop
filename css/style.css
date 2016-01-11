@@ -1,0 +1,392 @@
+/*
+------------------------------------------------
+General styles
+------------------------------------------------
+*/
+.ux-window-content {
+    color: #666;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 18px 0;
+}
+h2, h3, h4, h5, h6 {
+    background: none;
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+    margin: 15px 0;
+}
+h3, h4, h5, h6 {
+    text-decoration: underline;
+    text-transform: none;
+}
+h4, h5, h6 {
+    font-weight: normal;
+}
+.ux-window-content p {
+    margin: 5px 0 12px 0;
+    font-size: 12px;
+}
+hr {
+    margin: 15px 0;
+    border: 1px dotted #ccc;
+}
+ol, ol li {
+    list-style:decimal inside;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+ul, ul li {
+    list-style: disc inside;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+table {
+    background: white;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+table th {
+    font-size: 14px;
+    font-weight: normal;
+    color: #039;
+    border-bottom: 2px solid #6678B1;
+    padding: 10px 8px;
+}
+table td {
+    border-bottom: 1px solid #CCC;
+    color: #669;
+    padding: 6px 8px;
+}
+table tr:hover td {
+    background: #fafafa;
+}
+
+table.table2 th {
+    background: #B9C9FE;
+    border-top: 4px solid #AABCFE;
+    border-bottom: 1px solid white;
+    color: #039;
+    padding: 8px;
+}
+table.table2 td {
+    background: #E8EDFF;
+    border-bottom: 1px solid white;
+    color: #669;
+    border-top: 1px solid transparent;
+    padding: 8px;
+}
+table.table2 tr:hover td {
+    background: #D0DAFD;
+    color: #339;
+}
+
+table.table3 th {
+    font-size: inherit;
+    background: #FAFAFB;
+    border: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    padding: 5px 8px;
+}
+
+table.table3 td {
+    padding: 5px 10px;
+    color: #666;
+    border: 1px solid #CCC;
+}
+a {
+    color: #258fbc;
+    text-decoration: none;
+}
+a:hover {
+    color: #1c6f92;
+}
+.margin-container {
+    margin: 30px;
+}
+.clear {
+    clear: both;
+}
+
+/*
+------------------------------------------------
+Button styles
+------------------------------------------------
+*/
+.buttons a, .buttons button{
+    display:block;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+}
+.buttons button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+.buttons button[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+.buttons button img, .buttons a img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+button:hover, .buttons a:hover{
+    background-color:#dff4ff;
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+.buttons a:active{
+    background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}/* POSITIVE */button.positive, .buttons a.positive{
+    color:#529214;
+}
+.buttons a.positive:hover, button.positive:hover{
+    background-color:#E6EFC2;
+    border:1px solid #C6D880;
+    color:#529214;
+}
+.buttons a.positive:active{
+    background-color:#529214;
+    border:1px solid #529214;
+    color:#fff;
+}/* NEGATIVE */.buttons a.negative, button.negative{
+    color:#d12f19;
+}
+.buttons a.negative:hover, button.negative:hover{
+    background:#fbe3e4;
+    border:1px solid #fbc2c4;
+    color:#d12f19;
+}
+.buttons a.negative:active{
+    background-color:#d12f19;
+    border:1px solid #d12f19;
+    color:#fff;
+}
+/*
+------------------------------------------------
+Widget styles
+------------------------------------------------
+*/
+.widget {
+    border: 1px solid #CDCDCD;
+    margin: 0px 0 20px 0;
+}
+
+.widget.noborder {
+	border : none;
+}
+.widget .header.border {
+	border:1px solid #cdcdcd;
+	border-bottom:none;
+}
+.widget .header {
+	height: 30px;
+	border-bottom: none;
+	background: #fafafa; /* Old browsers */
+        background: -moz-linear-gradient(top, #ffffff 19%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(19%, #ffffff), color-stop(100%, #ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 19%, #ededed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 19%, #ededed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 19%, #ededed 100%); /* IE10+ */
+	background: linear-gradient(top, #ffffff 19%, #ededed 100%); /* W3C */
+	
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );/*  IE6-9 */
+}
+.widget .header span {
+	display: block;
+	font-weight: bold;
+	padding: 9px 0 0 10px;
+	float: left;
+}
+.widget .header span img {
+	margin-right:5px;
+}
+.widget .content {
+	background: #ffffff url("../images/inner-shadow.png") repeat-x;
+	border-top: 1px solid #cecece;
+	padding: 15px 25px;
+	min-height: 50px;
+}
+span span.ico {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    margin-top: -6px;
+    margin-left: -4px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.oneOne {
+    display: inline;
+    width: 100%;
+}
+.oneOne:first-child {
+    float:left;
+}
+.oneTwo {
+    width: 49%;
+    display: inline;
+    float: right;
+}
+.oneTwo:first-child {
+    float:left;
+}
+.oneThree {
+	width: 32%;
+	display: inline;
+	float: left;
+	margin-left: 2%;
+}
+.oneThree:first-child {
+	margin-left: 0;
+	float: left;
+}
+/*
+------------------------------------------------
+Success/Failure Good/Bad messages
+------------------------------------------------
+*/
+.message, .good-message, .bad-message, .warn-message {
+    padding: 10px 15px 10px 36px;
+    border: 1px solid #eee;
+    margin: 4px 0;
+    background: url(../images/icons/info16.png) no-repeat #e8f9fe 10px;
+}
+.bad-message {
+    background: url(../images/icons/cross16.png) no-repeat #fff2f2 10px;
+}
+.good-message {
+    background: url(../images/icons/tick16.png) no-repeat #f5fff2 10px;
+}
+.warn-message {
+    background: url(../images/icons/warn16.png) no-repeat #fffdf2 10px;
+}
+
+/*
+------------------------------------------------
+Forms
+------------------------------------------------
+*/
+.form-horizontal .control-label {
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.form-horizontal .controls {
+    margin-bottom: 27px;
+}
+form label {
+    display: block;
+    margin-bottom: 4px;
+}
+form .form-element {
+    margin-bottom: 12px;
+}
+form .span1 {
+    width: 60px;
+}
+form .span2 {
+    width: 120px;
+}
+form .span3 {
+    width: 180px;
+}
+
+form select, form input[type="text"] {
+    display: block;
+    margin-bottom: 9px;
+    vertical-align: middle;
+    position: relative;
+    height: 18px;
+    padding: 4px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #555;
+}
+form .input-prepend input {
+    display: inline-block;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    margin-bottom: 0;
+}
+form .input-append input {
+    display: inline-block;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    margin-bottom: 0;
+}
+.input-prepend .add-on, .input-append .add-on {
+    display: inline-block;
+    width: auto;
+    height: 18px;
+    min-width: 16px;
+    padding: 4px 5px;
+    font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    vertical-align: middle;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+}
+.input-prepend .add-on, .input-append.input-prepend .add-on:first-child {
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+}
+.input-append .add-on {
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+.input-append.input-prepend .add-on {
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+form .input-prepend.input-append input {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+form .input-mini {
+    width: 100px;
+}
+form .input-medium {
+    width: 200px;
+}
+form .input-small {
+    width: 140px;
+}
+form label.inline {
+    display: inline-block;
+}

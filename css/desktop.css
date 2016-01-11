@@ -1,0 +1,624 @@
+html {
+    min-height: 416px;
+}
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 11px;
+    overflow: hidden;
+}
+p {
+    line-height: normal;
+}
+#ux-desktop-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 416px;
+    width: 100%;
+    height: 100%;
+}
+.ux-template {
+    display: none;
+}
+#wallpaper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#wallpaper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.ux-icon-holder {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.ux-icon {
+    width: 48px;
+    height: 79px;
+    text-align: center;
+    color: #fff;
+    margin: 15px;
+/*    cursor: pointer;*/
+    cursor: default;
+    float: left;
+    position: absolute;
+}
+
+/*folder icons*/
+.ux-window-content .ux-icon {
+    color: #333;
+    top: 0;
+    left: 0;
+}
+
+.ux-icon-graphic {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    opacity: 0.9;
+    filter: alpha(opacity:90);
+}
+.ux-icon-hover .ux-icon-graphic {
+    opacity: 1;
+    filter: alpha(opacity:100);
+}
+.ux-icon-title {
+    margin-top: 5px;
+}
+
+.ux-taskbar {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #000 url(../images/taskbar/taskbar-bg.gif) repeat-x;
+    z-index: 1000;
+}
+.ux-taskbar-buttons {
+    background: #000 url(../images/taskbar/taskbar-bg.gif) repeat-x;
+}
+.ux-taskbar-menu {
+    position: absolute;
+    width: 65px;
+    height: 42px;
+    margin-top: -5px;
+}
+.ux-taskbar-menu-button {
+    position: absolute;
+    background: url(../images/taskbar/main-menu-button.png) no-repeat;
+/*    cursor: pointer;*/
+    width: 50px;
+    height: 42px;
+    z-index: 1002;
+    margin-left: 5px;
+}
+.ux-separator {
+    border-top: 1px solid #444;
+    margin: 10px 0px;
+}
+.ux-taskbar-menu-overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 999;
+}
+.ux-taskbar-menu-popup {
+    position: absolute;
+    width: 300px;
+    height: 0;
+    max-height: 400px;
+    background: #333 url(../images/taskbar/taskbar-bg.gif) repeat-x top left;
+    border: 1px solid #555;
+    bottom: 36px;
+    z-index: 1002;
+    opacity: 0;
+    filter: alpha(opacity:0);
+    overflow: hidden;
+}
+.ux-taskbar-icons {
+    position: absolute;
+    width: 149px;
+}
+.ux-taskbar-icon-holder-wrapper {
+    height: 345px;
+    overflow: hidden;
+}
+.mobile .ux-taskbar-icon-holder-wrapper {
+    height: 315px;
+}
+.ux-taskbar-scroll-down, .ux-taskbar-scroll-up {
+    position: absolute;
+    top: 343px;
+    right: 8px;
+    width: 10px;
+    height: 10px;
+    background: url(../images/system/arrows.png) 0 -10px no-repeat;
+    display: none;
+}
+.mobile .ux-taskbar-scroll-down, .mobile .ux-taskbar-scroll-up {
+    top: 311px;
+}
+.ux-taskbar-scroll-up {
+    right: 23px;
+    background-position: 0 0;
+}
+.ux-taskbar-icon-holder {
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.ux-taskbar-config-holder {
+    position: absolute;
+    background: #000;
+    left: 150px;
+    width: 126px;
+    padding: 12px;
+    height: 100%;
+}
+.ux-taskbar-title {
+    color: #fff;
+    padding: 13px;
+    font-weight: bold;
+}
+.ux-taskbar-icon {
+    cursor: default;
+    padding: 6px;
+    margin: 0 0 1px 0;
+    max-width: 115px;
+}
+.ux-taskbar-icon-hover {
+    background: #000;
+}
+.ux-taskbar-config-holder .ux-taskbar-icon-hover {
+    background: #333;
+}
+.ux-taskbar-icon-title {
+    color: #fff;
+    text-indent: 22px;
+    background-repeat: no-repeat;
+    padding: 2px 0;
+    clear: both;
+}
+
+.ux-taskbar-quick-launch {
+    position: absolute;
+    background: url(../images/taskbar/button-inactive.png) repeat-x;
+}
+.ux-show-desktop {
+    display: block;
+    width: 30px;
+    height: 38px;
+    background: url(../images/icons/show-desktop16.png) 8px 11px no-repeat;
+}
+.ux-taskbar-buttons {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+.ux-taskbar-button {
+    margin-left: 5px;
+    background: url(../images/taskbar/button-inactive.png) repeat-x;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    float: left;
+    overflow: hidden;
+    cursor: default;
+}
+.ux-taskbar-button-active {
+    background: url(../images/taskbar/button-active.png) repeat-x;
+}
+.ux-taskbar-button-title {
+    text-indent: 30px;
+    height: 16px;
+    background: transparent no-repeat 6px 2px;
+    padding: 4px 0;
+    margin: 9px;
+}
+
+
+.ux-body {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+.ux-loader-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 64px;
+    height: 10px;
+    margin-left: -32px;
+    margin-top: -5px;
+}
+.ux-modal-overlay {
+    background: #000;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.ux-window {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    width: 400px;
+    min-width: 160px;
+    min-height: 40px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 10;
+    border: 2px solid #bbb;
+    border-top: none;
+    background: #fafafa;
+}
+
+.ux-window-header {
+    background: url(../images/window/header.png) repeat-x;
+    height: 24px;
+    cursor: move;
+}
+.mobile .ux-window-header {
+    display: none;
+}
+
+.ux-window-header-title {
+    position:absolute;
+    left: 0;
+    margin: 4px;
+    text-indent: 22px;
+    font-weight: bold;
+    background: transparent no-repeat 2px 0px;
+    color: #777;
+}
+.ux-window-active .ux-window-header-title {
+    color: #000;
+}
+.ux-window-header-controls {
+    position:absolute;
+    right: 0;
+}
+.ux-window-header-controls a {
+    display: block;
+    cursor: default;
+    width: 28px;
+    height: 15px;
+    background-image: url(../images/window/window_buttons.gif);
+    float:left;
+}
+.ux-controls-min {
+    background-position: 0 0;
+}
+.ux-controls-min:hover {
+    background-position: 0 -15px;
+}
+.ux-controls-max {
+    background-position: -28px 0;
+}
+.ux-controls-max:hover {
+    background-position: -28px -15px;
+}
+.ux-controls-close {
+    background-position: -56px 0;
+}
+.ux-controls-close:hover {
+    background-position: -56px -15px;
+}
+
+
+
+
+.ux-window-content {
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    overflow: auto;
+    position: absolute;
+}
+.ux-window-status {
+    height: 17px;
+    background: #ddd;
+    border-top: 1px inset #eee;
+    overflow: hidden;
+    color: #444;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.ux-window-status p {
+    margin: 2px;
+}
+
+
+.ux-window-resizer {
+    background: url(../images/window/window_corner.gif) no-repeat;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: nw-resize;
+}
+
+/*system icons*/
+.folder {
+    background-image: url(../images/icons/folder.png);
+}
+.folder16 {
+    background-image: url(../images/icons/folder16.png);
+}
+.icon-close-16 {
+    background-image: url(../images/icons/close16.png);
+}
+.icon-logout-16 {
+    background-image: url(../images/icons/logout16.png) ;
+}
+.icon-settings-16 {
+    background-image: url(../images/icons/settings16.png) ;
+}
+.icon-general-16 {
+    background-image: url(../images/icons/general16.png) ;
+}
+
+
+
+/*custom icons*/
+.icon-my-computer {
+    background-image: url(../images/icons/my-computer.png);
+}
+.icon-my-computer-16 {
+    background-image: url(../images/icons/my-computer16.png);
+}
+.icon-office {
+    background-image: url(../images/icons/office-guy.png);
+}
+.icon-office-16 {
+    background-image: url(../images/icons/office-guy16.png) ;
+}
+
+.icon-mobile {
+    background-image: url(../images/icons/mobile.png);
+}
+.icon-mobile-16 {
+    background-image: url(../images/icons/mobile16.png) ;
+}
+.icon-skater {
+    background-image: url(../images/icons/skater.png);
+}
+.icon-skater-16 {
+    background-image: url(../images/icons/skater16.png) ;
+}
+.icon-cricket {
+    background-image: url(../images/icons/cricket.png);
+}
+.icon-cricket-16 {
+    background-image: url(../images/icons/cricket16.png) ;
+}
+.icon-widget {
+    background-image: url(../images/icons/widget.png);
+}
+.icon-widget-16 {
+    background-image: url(../images/icons/widget16.png) ;
+}
+.icon-typography {
+    background-image: url(../images/icons/typography.png);
+}
+.icon-typography-16 {
+    background-image: url(../images/icons/typography16.png) ;
+}
+.icon-table {
+    background-image: url(../images/icons/table.png);
+}
+.icon-table-16 {
+    background-image: url(../images/icons/table16.png) ;
+}
+.icon-api-practice {
+    background-image: url(../images/icons/api-practice.png);
+}
+.icon-api-practice-16 {
+    background-image: url(../images/icons/api-practice16.png) ;
+}
+.icon-forms {
+    background-image: url(../images/icons/form.png);
+}
+.icon-forms-16 {
+    background-image: url(../images/icons/form16.png) ;
+}
+.icon-charts {
+    background-image: url(../images/icons/chart.png);
+}
+.icon-charts-16 {
+    background-image: url(../images/icons/chart16.png) ;
+}
+.icon-website {
+    background-image: url(../images/icons/website.png);
+}
+.icon-website-16 {
+    background-image: url(../images/icons/website16.png) ;
+}
+.icon-terminal {
+    background-image: url(../images/icons/terminal.png) ;
+}
+.icon-terminal-16 {
+    background-image: url(../images/icons/terminal16.png) ;
+}
+
+
+
+
+
+/*temporary styles*/
+.styled-p {
+    margin: 14px 20px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 11px;
+    text-align: justify;
+}
+h2 {
+    font-size: 20px;
+    margin: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+------------------------------------------------
+UXDialog
+------------------------------------------------
+*/
+
+.UXDialogOverlay
+	{
+            position:fixed;
+            top:0;
+            left:0;
+            background: rgba(0, 0, 0, 0.5);
+            display:none;
+            z-index: 999999;
+	}
+.UXDialogOuter
+	{
+	background:#eee;
+	border:1px solid #fff;
+	box-shadow:0px 3px 7px #333;
+	-moz-box-shadow:0px 3px 7px #333;
+	-webkit-box-shadow:0px 3px 7px #333;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-khtml-border-radius:4px;
+	position:absolute;
+	z-index:99999999;
+	min-width:200px;
+	min-height:50px;
+	max-width:243px;
+	position:fixed;
+	display:none;
+	}
+.UXDialogInner
+	{
+	padding:20px;
+	color:#333;
+	text-shadow:0px 1px 0px #fff;
+	}
+.UXDialogInner button
+	{
+	border:1px solid #bbb;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-khtml-border-radius:3px;
+	background: -moz-linear-gradient(100% 100% 90deg, #eee, #d5d5d5);
+  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#d5d5d5));
+  	background: -webkit-linear-gradient(#eee, #d5d5d5);
+    background: -o-linear-gradient(#eee, #d5d5d5);
+	color:#232d3d;
+	font-size:11px;
+	padding:4px 10px;
+	margin:0 3px;
+	text-shadow:0px 1px 0px #fff;
+	cursor:pointer;
+	box-shadow:0px 1px 2px #ccc;
+	-moz-box-shadow:0px 1px 2px #ccc;
+	-webkit-box-shadow:0px 1px 2px #ccc;
+	}
+.UXDialogInner button:hover
+	{
+	color:#d85054;
+	}
+.aButtons, .aInput
+	{
+	margin: 10px 0px 0px 0px;
+	text-align:right;
+	}
+        .aButtons {
+            margin-top: 15px;
+        }
+.aTextbox
+	{
+	border:1px solid #aaa;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	-khtml-border-radius:4px;
+	box-shadow:0px 1px 0px #fff;
+	-moz-box-shadow:0px 1px 0px #fff;
+	-webkit-box-shadow:0px 1px 0px #fff;
+	width:180px;
+	font-size:11px;
+	padding:5px 10px;
+	}
+	
+
+
+	/*
+	------------------------------------------------
+	UXNotification
+	------------------------------------------------
+	*/	
+.notice-wrap {
+		position: fixed;
+		bottom: 40px;
+		right: 8px;
+		width: 250px;
+		z-index: 9999;
+	}
+
+	* html .notice-wrap {
+		position: absolute;		
+	}
+
+	.notice-item {
+		height: 60px;
+		background: transparent url(../images/notification/notify-bg.png?a);
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		color: #eee;
+		padding: 10px 10px 0 10px;
+		font-family: lucida Grande;
+		font-size: 11px;
+		border: 2px solid #424242;
+		display: block;
+		position: relative;
+		margin: 0 0 12px 0;
+	}
+
+	.notice-item-close {
+		position: absolute;
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: bold;
+		right: 6px;
+		top: 6px;
+		cursor: pointer;
+	}
+	
