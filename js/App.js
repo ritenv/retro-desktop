@@ -1,20 +1,12 @@
 $(window).load(function() {
     var config;
-//    UXDialog("Press F11 (Windows) or CMD+SHIFT+F (Mac) for Full-screen experience; looks brilliant that way.");
-
-//    UXDialog("Hello, what is your name?", {input: true}, function(r) {
-//        if (r)
-//            UXDialog("Nice to have you here, " + r + "!");
-//        else
-//            UXDialog("Too sad, you couldn't share your name!");
-//    });
     
     UXIcon({
         iconClass: "icon-typography",
         iconClassSmall: "icon-typography-16",
         title: "HTML Elements",
         status: "Typography throughout this template",
-        autoLoad: "ajax-samples/html.php",
+        autoLoad: "ajax-samples/html.html",
         width: 1000,
         height: "80%"
     });
@@ -24,7 +16,7 @@ $(window).load(function() {
         iconClassSmall: "icon-widget-16",
         title: "Widgets",
         status: "Flexible Widgets",
-        autoLoad: "ajax-samples/widgets.php",
+        autoLoad: "ajax-samples/widgets.html",
         width: 824,
         height: 535
     });
@@ -33,7 +25,7 @@ $(window).load(function() {
         iconClassSmall: "icon-table-16",
         title: "Tables",
         status: "Flexible Tables",
-        autoLoad: "ajax-samples/tables.php",
+        autoLoad: "ajax-samples/tables.html",
         width: 824,
         height: 535
     });
@@ -42,7 +34,7 @@ $(window).load(function() {
         iconClassSmall: "icon-forms-16",
         title: "Forms",
         status: "Forms for various type of data input",
-        autoLoad: "ajax-samples/forms.php",
+        autoLoad: "ajax-samples/forms.html",
         width: 824,
         height: 535,
         listeners: {
@@ -57,7 +49,7 @@ $(window).load(function() {
         iconClassSmall: "icon-charts-16",
         title: "Charts",
         status: "Charts for various type of data visualizations",
-        autoLoad: "ajax-samples/charts.php",
+        autoLoad: "ajax-samples/charts.html",
         width: 824,
         height: 535,
         listeners: {
@@ -84,7 +76,7 @@ $(window).load(function() {
         iconClassSmall: "icon-api-practice-16", 
         title: "API Practice",
         status: "See how your different desktop icons can be called and interacted.", 
-        autoLoad: "ajax-samples/api_practice.php",
+        autoLoad: "ajax-samples/api_practice.html",
         height: 550,
 //        confirmBeforeClose: true,
         listeners: {
@@ -111,51 +103,11 @@ $(window).load(function() {
         iconClass: "icon-terminal",
         iconClassSmall: "icon-terminal-16", 
         title: "Practice Area", 
-        autoLoad: "ajax-samples/practice.php", 
+        autoLoad: "ajax-samples/practice.html", 
         mode: "ajax",
         width: 480,
         height: 480,
-        left: 150,
-//        allowMaximize: false,
-        listeners: {
-//            loadComplete: function() {
-//                new UXNotify({text:"Load Complete."});
-//            },
-//            render: function() {
-//                new UXNotify({text:"Render Complete."});
-//            },
-//            maximize: function() {
-//                new UXNotify({text:"Window maximize."});
-//            },
-//            minimize: function() {
-//                new UXNotify({text:"Window minimize."});
-//            },
-//            resize: function() {
-//                new UXNotify({text:"Window resize."});
-//            },
-//            beforeClose: function() {
-//                new UXNotify({text:"Preparing to Close."});
-//            },
-//            close: function() {
-//                new UXNotify({text:"Window Closed."});
-//            },
-//            activate: function() {
-//                new UXNotify({text:"Window activate."});
-//            },
-//            deactivate: function() {
-//                new UXNotify({text:"Window Deactivate."});
-//            },
-//            dragStart: function() {
-//                new UXNotify({text:"Dragging Started."});
-//            },
-//            dragComplete: function() {
-//                new UXNotify({text:"Dragging Complete."});
-//            }
-        }
-//        ,
-//        iconStyles: {
-//            color: "#00ff00"
-//        }
+        left: 150
     });
     UXIcon({
         id: "other-websites-folder",
@@ -271,7 +223,7 @@ $(window).load(function() {
 //demo-related configuration options
 var exampleDotComConfig = {
     title: "www.example.com",
-    autoLoad: "ajax-samples/http://www.example.com",
+    autoLoad: "http://www.example.com",
     mode: "iframe",
     width: 850,
     height: 600,
